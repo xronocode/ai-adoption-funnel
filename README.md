@@ -30,7 +30,7 @@ Strongest claims are **survey shares** (measured). Absolute counts are **model o
 | Agentic coders | ~4.6M | 3.4–6.1M | derived | Stack Overflow (31.8%) |
 | C-level hands-on coders | ~486K | 236–808K | synthetic | BLS × Frontier × hands-on |
 | AI builders | ~35K | 15–75K | scenario | cascading extrapolation |
-| Regulated, emerging markets | ~700 | 191–2,085 | heuristic | expert estimate |
+| Regulated, emerging markets | ~720 | 191–2,085 | heuristic | expert estimate |
 
 Full numbers, sources, and quarter-by-quarter history: [`data/`](data/).
 
