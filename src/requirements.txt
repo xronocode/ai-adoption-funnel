@@ -1,0 +1,6 @@
+# Core simulation (monte_carlo_funnel.py, sensitivity_layer3.py) uses only the
+# Python standard library — no install needed.
+
+# Figure generation only:
+cairosvg>=2.7
+matplotlib>=3.7
