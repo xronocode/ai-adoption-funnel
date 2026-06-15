@@ -35,8 +35,8 @@ AI Power User Funnel — каскадная воронка, построенна
 
 | # | Метрика | Значение | Источник | Локация в источнике | URL | Дата публикации |
 |---|---------|----------|----------|---------------------|-----|-----------------|
-| 1.1 | Общее число knowledge workers в мире | ~1 млрд | AIIMI / отраслевые оценки WEF | Раздел «More than one billion knowledge workers worldwide» | Широко цитируемая оценка WEF/OECD | 2022, проекция на 2026 |
-| 1.1b | Knowledge workers — уточнённый диапазон | **0.64 — 1.0 млрд** (19.6-30.4% глобальной занятости) | ILO/UN brief on knowledge work | «Depending on definition, the global number of knowledge-work jobs is between 644 million and 997 million» | ⚠️ Cited via ChatGPT deep research; direct ILO/UN URL not independently verified | 2025 |
+| 1.1 | Общее число knowledge workers в мире | >1 млрд (~32% всех работников) | Gartner | Knowledge-worker forecast (press release) | https://www.gartner.com/en/newsroom/press-releases/2021-06-22-gartner-forecasts-51-percent-of-global-knowledge-workers-will-be-remote-by-2021 | 2021 |
+| 1.1b | Knowledge workers — уточнённый диапазон | **0.64 — 1.0 млрд** (19.6-30.4% глобальной занятости) | ILOSTAT — занятость по занятиям (ISCO-08) | Major groups 1–3: managers + professionals + technicians/associate professionals, доля глобальной занятости | https://ilostat.ilo.org/topics/employment/ | 2025 |
 | 1.2 | Число professional developers в мире | 36.5 млн (professional), 47.2 млн (total incl. amateur) | SlashData, Developer Population Q1 2025 | Вебинар «Global developer population trends 2025»: «From early 2022 to early 2025, the number of professional developers grew significantly—by 70%—from 21.8 million to 36.5 million» | https://www.slashdata.co/post/global-developer-population-trends-2025-how-many-developers-are-there | May 2025 |
 | 1.3 | Число professional developers (альтернативная оценка) | 20.8 млн professional (**~14% MAPE** в модели JetBrains) | JetBrains Developer Ecosystem Data Playground 2025 | Chart: «By 2025, the number of professional developers worldwide reached approximately 20.8 million people»; model has avg historical error ~14% MAPE | https://www.jetbrains.com/lp/devecosystem-data-playground/ | 2025 |
 | 1.4 | Число professional developers (Statista) | 28.7 млн | Statista via Keyhole Software | «The global software developer population reached 28.7 million in 2025 according to Statista» | https://keyholesoftware.com/software-development-statistics-2026-market-size-developer-trends-technology-adoption/ | Apr 2026 |
@@ -301,7 +301,7 @@ AI Power User Funnel — каскадная воронка, построенна
 
 | Слой | Primary share | Absolute estimate | 90% CI (reproduced MC, 10K iter) | Estimation class | Якорный источник |
 |------|---------------|-------------------|----------------------------------|------------------|------------------|
-| Knowledge workers | — | **0.64-1.0 млрд** | 658M — 983M | Observed | ILO/UN + WEF/OECD |
+| Knowledge workers | — | **0.64-1.0 млрд** | 658M — 983M | Observed | ILOSTAT (ISCO-08 1-3) + Gartner |
 | Occasional AI users | **50% US** (Gallup) | 307M (central) | **234 — 388M** | Derived | Gallup Q1 2026 × tiered geo |
 | Frontier Professionals | **16% of AI users** (WTI) | 27.6M (central) | **19.0 — 37.7M** | Derived | Microsoft WTI 2026 × AI user base |
 | Agentic coders | **31.8% pro devs** use agents (SO) | 4.6M (central) | **3.4 — 6.1M** | Derived | SO 2025 × dev population |
@@ -502,6 +502,7 @@ Layers 5-7: только один путь (каскадная экстрапо�
 | v1.7 → v1.8 | Layer 1.1b | ILO/UN as verified | + **caveat: direct URL not independently verified** | Self-review: citation-from-citation |
 | v1.7 → v1.8 | Section 5.9 | «7/7 unanimous consensus» | + **caveat: 7 interpretations of shared sources ≠ 7 independent validations** | Self-review: circular validation |
 | v1.7 → v1.8 | New file | — | **Publication Brief** created as separate deliverable | Self-review: research table too large for publication |
+| v1.8 → v1.9 | Layer 1.1 / 1.1b | ILO/UN via ChatGPT (URL unverified) | **Re-anchored to primary sources**: ILOSTAT employment-by-occupation (ISCO-08 groups 1–3) + Gartner (>1B, ~32%), both with direct URLs | Self-review: replaced citation-from-citation with verifiable primaries |
 
 ### 5.7 Альтернативная воронка: от «frequent» вместо «occasional» (рекомендация DeepSeek)
 
