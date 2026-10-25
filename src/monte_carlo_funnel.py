@@ -15,13 +15,7 @@ for _ in range(N):
     # Tiered geo multiplier: weighted average ~0.75 with spread
     geo = random.triangular(0.60, 0.90, 0.75)
     L2 = L1 * us_rate * geo
-    
-    # Layer 2a: Daily users
-    # US daily 13% (Gallup, ±2pp), global discount
-    daily_rate = random.gauss(0.13, 0.01)
-    daily_geo = random.triangular(0.50, 0.85, 0.65)
-    L2a = L1 * daily_rate * daily_geo
-    
+
     # Layer 3: Frontier Professionals
     # 16% of AI users (Microsoft WTI, ±3pp survey uncertainty)
     frontier_rate = random.gauss(0.16, 0.015)
@@ -91,20 +85,3 @@ for layer in ["L1", "L2", "L3", "L4", "L5", "L6", "L7"]:
     print(f"  5th %:  {p5:>10.1f}")
     print(f"  95th %: {p95:>10.1f}")
     print(f"  90% CI: [{p5:.1f} — {p95:.1f}]")
-
-# Layer 3 sensitivity analysis
-print("\n" + "=" * 70)
-print("LAYER 3 SENSITIVITY: Frontier % × different denominators")
-print("=" * 70)
-denominators = [80, 130, 200, 300, 400]
-frontier_rates = [0.12, 0.16, 0.19]
-print(f"{'Base (M)':>10}", end="")
-for fr in frontier_rates:
-    print(f"  {fr*100:.0f}% Frontier", end="")
-print()
-for d in denominators:
-    print(f"{d:>10}", end="")
-    for fr in frontier_rates:
-        print(f"  {d*fr:>12.1f}M", end="")
-    print()
-
