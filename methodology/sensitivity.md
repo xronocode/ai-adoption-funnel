@@ -16,7 +16,7 @@ Run [`../src/sensitivity_layer3.py`](../src/sensitivity_layer3.py):
 
 **Spread: 9.6M to 76M — 8× from the denominator choice alone.**
 
-The funnel uses an 80–130M base (daily/frequent) × 16% → 12.8–20.8M, which is the conservative choice. WTI's "AI users" likely includes occasional users too, which would push the estimate higher — so if anything, Layer 3 is understated here.
+The funnel uses the "frequent+" base — 28% of geo-adjusted knowledge workers (~150–210M; see [`monte-carlo.md`](monte-carlo.md), "AI-user base") — × 16% → **27.6M central, 19.0–37.7M CI**. That is the 200M row above, give or take, and it is what [`../data/funnel_layers.csv`](../data/funnel_layers.csv) publishes.
 
 ## Why this is the key sensitivity
 

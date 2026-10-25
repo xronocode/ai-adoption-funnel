@@ -22,4 +22,5 @@ for d in denominators:
 lo = min(denominators) * min(frontier_rates)
 hi = max(denominators) * max(frontier_rates)
 print(f"\nRange: {lo:.1f}M – {hi:.1f}M  ({hi/lo:.1f}x spread from assumptions alone)")
-print("Funnel uses 80-130M base x 16% -> 12.8-20.8M (conservative choice).")
+print("Funnel uses the 'frequent+' base: 0.28 x geo of knowledge workers")
+print("(~150-210M) x 16% -> ~27.6M central (see monte_carlo_funnel.py).")

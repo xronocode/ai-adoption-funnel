@@ -327,7 +327,7 @@ AI Power User Funnel — каскадная воронка, построенна
 | 300M (occasional, lower) | 36.0M | 48.0M | 57.0M |
 | 400M (occasional, upper) | 48.0M | 64.0M | 76.0M |
 
-**Вывод:** Выбор denominaтора меняет Layer 3 от **9.6M до 76M** (8x range). При base=130M и rate=16%, Layer 3 ≈ 20.8M — совпадает с центральной оценкой. Документ использует 80-130M (daily/frequent) как base, что даёт 12.8-24.7M. Это **conservative choice** — WTI «AI users» likely includes occasional users too, что сдвинуло бы оценку вверх.
+**Вывод:** Выбор denominator меняет Layer 3 от **9.6M до 76M** (8x range). Модель использует base «frequent+» ≈ 0.28 × geo-доля knowledge workers (~150-210M) × 16% → центральная оценка **27.6M** (CI 19.0-37.7M) — примерно строка 200M таблицы выше; см. `src/monte_carlo_funnel.py`.
 
 ---
 

@@ -38,7 +38,7 @@ Layer-by-layer derivation. Each step states the share used, the base it applies 
 
 Three independent paths converge for layers 1–4:
 1. Gallup → global: 13% US daily × US workforce, scaled globally → 63–84M daily (matches lower bound)
-2. Microsoft → Frontier: 16% × 80–130M frequent/daily → 13–21M (matches)
+2. Microsoft → Frontier: 16% × ~150–210M frequent+ → ~27.6M (matches the central estimate)
 3. Stack Overflow → coders: 28–36M devs × 51% daily × ~30% agentic → 3–5M (matches Layer 4)
 
 Layers 5–7 have only one path (the cascade), so convergence cannot be checked — hence the wide intervals.
