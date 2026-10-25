@@ -13,13 +13,14 @@ const translations = {
     percentile: "Percentile",
     cohort: "Your Cohort",
     methodology: "Methodology",
-    methodText: "Cascading filter model based on Microsoft WTI 2026 (n=20K), McKinsey State of AI (n=1.8K), Pew Research (n=5K), Anthropic disclosed WAU, Stack Overflow Dev Survey (n=65K). Each layer narrows by intersection of independent published metrics. Lower layers extrapolated via BLS C-level share (~2-3%) and builder-vs-user ratio (~5-10%, SO). Margin ±3-5x on bottom layers, order of magnitude stable.",
+    methodText: "Cascading filter model based on Gallup Workforce AI (n=23.7K), Microsoft WTI 2026 (n=20K), McKinsey State of AI (n=1.5K), Anthropic disclosed WAU, Stack Overflow Dev Survey (n=49K). Each layer narrows by intersection of independent published metrics. Lower layers extrapolated via BLS C-level share (~2-3%) and builder-vs-user ratio (~5-10%, SO). Margin ±3-5x on bottom layers, order of magnitude stable.",
     questionLabel: "Question",
     of: "of",
     funnelTitle: "The AI Power User Funnel",
     you: "← You are here",
     shareText: "Share result",
     copied: "Copied!",
+    copyFail: "Clipboard unavailable — copy manually",
     langSwitch: "RU",
     questions: [
       {
@@ -76,13 +77,14 @@ const translations = {
     percentile: "Персентиль",
     cohort: "Ваша когорта",
     methodology: "Методика",
-    methodText: "Каскадная модель фильтрации по пересечению независимых метрик: Microsoft WTI 2026 (n=20K), McKinsey State of AI (n=1.8K), Pew Research (n=5K), Anthropic WAU, Stack Overflow Dev Survey (n=65K). Нижние слои — экстраполяция через долю C-level (~2-3%, BLS) и долю builders vs users (~5-10%, SO). Погрешность нижних слоёв ±3-5x, порядок устойчивый.",
+    methodText: "Каскадная модель фильтрации по пересечению независимых метрик: Gallup Workforce AI (n=23.7K), Microsoft WTI 2026 (n=20K), McKinsey State of AI (n=1.5K), Anthropic WAU, Stack Overflow Dev Survey (n=49K). Нижние слои — экстраполяция через долю C-level (~2-3%, BLS) и долю builders vs users (~5-10%, SO). Погрешность нижних слоёв ±3-5x, порядок устойчивый.",
     questionLabel: "Вопрос",
     of: "из",
     funnelTitle: "Воронка AI Power Users",
     you: "← Вы здесь",
     shareText: "Поделиться",
     copied: "Скопировано!",
+    copyFail: "Буфер недоступен — скопируйте вручную",
     langSwitch: "EN",
     questions: [
       {
@@ -133,16 +135,16 @@ const cohorts = {
   en: [
     { name: "Casual User", range: [0, 7], population: "1B", percentileBase: 50, color: "#64748b", desc: "You use AI occasionally. You're in the majority — and the opportunity ahead is massive." },
     { name: "Regular User", range: [8, 13], population: "100M", percentileBase: 80, color: "#6366f1", desc: "Daily AI user. You're ahead of 80% of knowledge workers globally." },
-    { name: "Power User", range: [14, 19], population: "16M", percentileBase: 93, color: "#8b5cf6", desc: "Frontier Professional territory. You reshape workflows, not just use tools." },
-    { name: "AI Builder", range: [20, 26], population: "300K", percentileBase: 98.5, color: "#d946ef", desc: "You build with AI, not just use it. Custom tools, pipelines, products." },
-    { name: "AI-Native Executive", range: [27, 30], population: "~10-30K", percentileBase: 99.9, color: "#f43f5e", desc: "You operate AI at C-level in a regulated industry while building your own frameworks and products. You are the edge case." }
+    { name: "Power User", range: [14, 19], population: "27.6M", percentileBase: 93, color: "#8b5cf6", desc: "Frontier Professional territory. You reshape workflows, not just use tools." },
+    { name: "AI Builder", range: [20, 26], population: "486K", percentileBase: 98.5, color: "#d946ef", desc: "You build with AI, not just use it. Custom tools, pipelines, products." },
+    { name: "AI-Native Executive", range: [27, 30], population: "~35K", percentileBase: 99.9, color: "#f43f5e", desc: "You operate AI at C-level in a regulated industry while building your own frameworks and products. You are the edge case." }
   ],
   ru: [
     { name: "Казуальный пользователь", range: [0, 7], population: "1 млрд", percentileBase: 50, color: "#64748b", desc: "Вы используете AI эпизодически. Вы в большинстве — и перед вами огромные возможности." },
     { name: "Регулярный пользователь", range: [8, 13], population: "100 млн", percentileBase: 80, color: "#6366f1", desc: "Ежедневный AI-юзер. Вы впереди 80% knowledge workers в мире." },
-    { name: "Power User", range: [14, 19], population: "16 млн", percentileBase: 93, color: "#8b5cf6", desc: "Территория Frontier Professional. Вы перестраиваете воркфлоу, а не просто используете инструменты." },
-    { name: "AI Builder", range: [20, 26], population: "300K", percentileBase: 98.5, color: "#d946ef", desc: "Вы строите на AI, а не просто используете. Свои тулы, пайплайны, продукты." },
-    { name: "AI-Native Executive", range: [27, 30], population: "~10-30K", percentileBase: 99.9, color: "#f43f5e", desc: "Вы применяете AI на уровне C-level в регулируемой отрасли, параллельно создавая собственные фреймворки и продукты. Вы — edge case." }
+    { name: "Power User", range: [14, 19], population: "27.6 млн", percentileBase: 93, color: "#8b5cf6", desc: "Территория Frontier Professional. Вы перестраиваете воркфлоу, а не просто используете инструменты." },
+    { name: "AI Builder", range: [20, 26], population: "486K", percentileBase: 98.5, color: "#d946ef", desc: "Вы строите на AI, а не просто используете. Свои тулы, пайплайны, продукты." },
+    { name: "AI-Native Executive", range: [27, 30], population: "~35K", percentileBase: 99.9, color: "#f43f5e", desc: "Вы применяете AI на уровне C-level в регулируемой отрасли, параллельно создавая собственные фреймворки и продукты. Вы — edge case." }
   ]
 };
 
@@ -150,45 +152,48 @@ const funnelData = {
   en: [
     { label: "Knowledge workers", count: "1B", width: 100 },
     { label: "Daily GenAI users", count: "100M", width: 72 },
-    { label: "Frontier Professionals", count: "16M", width: 48 },
-    { label: "AI coders (daily)", count: "2-3M", width: 30 },
-    { label: "C-level AI builders", count: "150-300K", width: 18 },
-    { label: "Framework creators", count: "10-30K", width: 10 },
+    { label: "Frontier Professionals", count: "27.6M", width: 48 },
+    { label: "AI coders (daily)", count: "4.6M", width: 30 },
+    { label: "C-level AI builders", count: "486K", width: 18 },
+    { label: "Framework creators", count: "35K", width: 10 },
     { label: "Regulated + all above", count: "~hundreds", width: 5 }
   ],
   ru: [
     { label: "Knowledge workers", count: "1 млрд", width: 100 },
     { label: "Ежедневные GenAI", count: "100 млн", width: 72 },
-    { label: "Frontier Professionals", count: "16 млн", width: 48 },
-    { label: "AI-кодеры (daily)", count: "2-3 млн", width: 30 },
-    { label: "C-level AI builders", count: "150-300K", width: 18 },
-    { label: "Создатели фреймворков", count: "10-30K", width: 10 },
+    { label: "Frontier Professionals", count: "27.6 млн", width: 48 },
+    { label: "AI-кодеры (daily)", count: "4.6 млн", width: 30 },
+    { label: "C-level AI builders", count: "486K", width: 18 },
+    { label: "Создатели фреймворков", count: "35K", width: 10 },
     { label: "Регулируемые + всё выше", count: "~сотни", width: 5 }
   ]
 };
 
-function getCohort(score, lang) {
+// Funnel row (index into funnelData) highlighted for each cohort. The cohort
+// ranges above plus this row mapping are the single boundary table both the
+// cohort and the funnel highlight derive from, so they cannot disagree.
+const cohortFunnelRow = [0, 1, 2, 4, 6];
+
+function getCohortIndex(score, lang) {
   const c = cohorts[lang];
   for (let i = c.length - 1; i >= 0; i--) {
-    if (score >= c[i].range[0] && score <= c[i].range[1]) {
-      const rangeSize = c[i].range[1] - c[i].range[0];
-      const posInRange = score - c[i].range[0];
-      const nextBase = i < c.length - 1 ? c[i + 1].percentileBase : 99.99;
-      const pct = c[i].percentileBase + (posInRange / rangeSize) * (nextBase - c[i].percentileBase);
-      return { ...c[i], percentile: Math.min(99.99, pct) };
-    }
+    if (score >= c[i].range[0] && score <= c[i].range[1]) return i;
   }
-  return { ...c[0], percentile: 30 };
+  return 0;
 }
 
-function getFunnelIndex(score) {
-  if (score <= 7) return 0;
-  if (score <= 10) return 1;
-  if (score <= 15) return 2;
-  if (score <= 19) return 3;
-  if (score <= 24) return 4;
-  if (score <= 27) return 5;
-  return 6;
+function getCohort(score, lang) {
+  const c = cohorts[lang];
+  const i = getCohortIndex(score, lang);
+  const rangeSize = c[i].range[1] - c[i].range[0];
+  const posInRange = Math.min(Math.max(score - c[i].range[0], 0), rangeSize);
+  const nextBase = i < c.length - 1 ? c[i + 1].percentileBase : 99.99;
+  const pct = c[i].percentileBase + (posInRange / rangeSize) * (nextBase - c[i].percentileBase);
+  return { ...c[i], percentile: Math.min(99.99, pct) };
+}
+
+function getFunnelIndex(score, lang) {
+  return cohortFunnelRow[getCohortIndex(score, lang)];
 }
 
 export default function AICohortTest() {
@@ -198,6 +203,7 @@ export default function AICohortTest() {
   const [answers, setAnswers] = useState([]);
   const [showMethod, setShowMethod] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState(false);
   const [animIn, setAnimIn] = useState(true);
 
   const t = translations[lang];
@@ -234,17 +240,28 @@ export default function AICohortTest() {
   };
 
   const result = getCohort(score, lang);
-  const funnelIdx = getFunnelIndex(score);
+  const funnelIdx = getFunnelIndex(score, lang);
   const funnel = funnelData[lang];
 
   const share = () => {
     const text = lang === "ru"
       ? `AI Power User Index: ${result.name}, персентиль ${result.percentile.toFixed(1)}%, балл ${score}/30`
       : `AI Power User Index: ${result.name}, percentile ${result.percentile.toFixed(1)}%, score ${score}/30`;
-    navigator.clipboard.writeText(text).then(() => {
+    const succeed = () => {
+      setCopyError(false);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    });
+    };
+    const fail = () => {
+      setCopied(false);
+      setCopyError(true);
+      setTimeout(() => setCopyError(false), 3000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(succeed).catch(fail);
+    } else {
+      fail();
+    }
   };
 
   const bg = "linear-gradient(145deg, #0a0a0f 0%, #0f0f1a 50%, #0a0a0f 100%)";
@@ -266,7 +283,7 @@ export default function AICohortTest() {
             {t.start}
           </button>
           <div style={{ marginTop: 48, fontSize: 11, color: "#475569", lineHeight: 1.7 }}>
-            10 {lang === "ru" ? "вопросов" : "questions"} · 2 min · {lang === "ru" ? "источники" : "sources"}: Microsoft WTI, McKinsey, Pew, Anthropic
+            10 {lang === "ru" ? "вопросов" : "questions"} · 2 min · {lang === "ru" ? "источники" : "sources"}: Gallup, Microsoft WTI, McKinsey, Anthropic
           </div>
         </div>
       </div>
@@ -375,7 +392,7 @@ export default function AICohortTest() {
             {t.restart}
           </button>
           <button onClick={share} style={{ flex: 1, background: "linear-gradient(135deg, #6366f1, #8b5cf6)", color: "#fff", border: "none", borderRadius: 8, padding: "10px", fontSize: 13, fontFamily: "inherit", cursor: "pointer", fontWeight: 600 }}>
-            {copied ? t.copied : t.shareText}
+            {copied ? t.copied : copyError ? t.copyFail : t.shareText}
           </button>
         </div>
 
