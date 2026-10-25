@@ -47,7 +47,7 @@ python src/sensitivity_layer3.py
 python src/render_funnel.py
 ```
 
-No dependencies beyond the Python standard library for the simulation; `cairosvg` and `matplotlib` for figures (see [`src/requirements.txt`](src/requirements.txt)).
+No dependencies beyond the Python standard library for the simulation; `cairosvg` for the funnel figure (see [`src/requirements.txt`](src/requirements.txt)).
 
 ## How solid are these numbers?
 

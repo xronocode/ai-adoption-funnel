@@ -17,7 +17,7 @@ This is a living model. Here's how to keep it current.
 1. **Add the new source row** to [`../data/sources.csv`](../data/sources.csv) with `publication_date` and today's `last_verified`.
 2. **Update the metric** in [`../data/funnel_layers.csv`](../data/funnel_layers.csv) and, if it's a Gallup quarter, [`../data/historical_gallup.csv`](../data/historical_gallup.csv).
 3. **Re-run the simulation** — `python src/monte_carlo_funnel.py` — and update the CI columns.
-4. **Regenerate figures** — `python src/render_funnel.py` and the trend chart.
+4. **Regenerate figures** — `python src/render_funnel.py`. The Gallup trend chart (`figures/ai-adoption-trend.png`) has no generation script and is maintained by hand.
 5. **Log it** in [`../CHANGELOG.md`](../CHANGELOG.md).
 
 ## Versioning

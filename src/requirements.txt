@@ -3,4 +3,3 @@
 
 # Figure generation only:
 cairosvg>=2.7
-matplotlib>=3.7
